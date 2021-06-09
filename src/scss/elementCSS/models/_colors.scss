@@ -1,0 +1,38 @@
+// -----------------------------------------------
+// |||||||||||| Colors Variables Model ||||||||||||
+// -----------------------------------------------
+    $colorText: #212931;
+    $colorBrouwn: #4E403D;
+    $colorNeutral: #717981;
+    $colorLight: #F7F7F7;
+    $colorSky: #18BFEF;
+
+    $color-block-dim: 120px;
+// -------------------------------------------------------
+// |||||||||||| Specification Model ||||||||||||
+// -------------------------------------------------------
+    .color-block {
+        width: $color-block-dim;
+        height: $color-block-dim;
+        display: inline-block;
+        color: $colorLight;
+        text-align: center;
+        padding: 1rem;
+        margin: auto;
+        &.colorText {
+            background: $colorText;
+        }
+        &.colorBrouwn {
+            background: $colorBrouwn;
+        }
+        &.colorNeutral {
+            background: $colorNeutral;
+        }
+        &.colorLight {
+            background: $colorLight;
+            color: $colorText;
+        }
+        &.colorSky {
+            background: $colorSky;
+        }
+    }

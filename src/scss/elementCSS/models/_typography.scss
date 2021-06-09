@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+
+// -----------------------------------------------
+// |||||||||||| Variables Model ||||||||||||
+// -----------------------------------------------
+
+    // |||||||||||| -Title- ||||||||||||
+        $font-title: 'Source Sans Pro', sans-serif;
+
+        $font-size-title-1: 2.5rem;
+        $font-size-title-2: 2.2rem;
+        $font-size-title-3: 1.9rem;
+        $font-size-title-4: 1.6rem;
+        $font-size-title-5: 1.3rem;
+        $font-size-title-6: 1rem;   
+
+    // |||||||||||| -Paragraph- ||||||||||||
+        $font-paragraph: 'Merriweather', serif;
+
+    // |||||||||||| -Font Default Values- ||||||||||||
+
+        // ------------ _Color ------------
+        $font-color-default: $colorText;
+
+        // ------------ _Dimensions ------------
+            $font-size-default: 1.1em;
+            $font-weight-default: 600;
+            $line-height-default: 1.7;
+
+        // ------------ _Letter Spacing & margin ------------
+            $letter-spacing-default: .025em;
+            $margin-default: 0 0 .7em 0;
+
+    // |||||||||||| -Links- ||||||||||||
+        $link-color: $colorText;
+        $background-link-color: none;
+        $link-decoration: underline dotted;
+
+        // ------------ _hover ------------
+            $link-color-hover: $colorText;
+            $background-link-color-hover: none;
+            $link-decoration-hover: none;
+
+    // |||||||||||| -Line Separator- ||||||||||||
+        $hr-height: 2px;
+        $hr-color: $colorNeutral;
+        $hr-margin: 2em 0;
+
+// -------------------------------------------------------
+// |||||||||||| Specification Model ||||||||||||
+// -------------------------------------------------------
+
+    h1, .title1 {
+        font-family: $font-title;
+        font-size: $font-size-title-1;
+        font-weight: $font-weight-default;
+        line-height: $line-height-default;
+        letter-spacing: $letter-spacing-default;
+        margin: $margin-default;
+    }
+    h2, .title2 {
+        font-family: $font-title;
+        font-size: $font-size-title-2;
+        font-weight: $font-weight-default;
+        line-height: $line-height-default;
+        letter-spacing: $letter-spacing-default;
+        margin: $margin-default;
+    }
+    h3, .title3 {
+        font-family: $font-title;
+        font-size: $font-size-title-3;
+        font-weight: $font-weight-default;
+        line-height: $line-height-default;
+        letter-spacing: $letter-spacing-default;
+        margin: $margin-default;
+    }
+    h4, .title4 {
+        font-family: $font-title;
+        font-size: $font-size-title-4;
+        font-weight: $font-weight-default;
+        line-height: $line-height-default;
+        letter-spacing: $letter-spacing-default;
+        margin: $margin-default;
+    }
+    h5, .title5 {
+        font-family: $font-title;
+        font-size: $font-size-title-5;
+        font-weight: $font-weight-default;
+        line-height: $line-height-default;
+        letter-spacing: $letter-spacing-default;
+        margin: $margin-default;
+    }
+    h6, .title6 {
+        font-family: $font-title;
+        font-size: $font-size-title-6;
+        font-weight: $font-weight-default;
+        line-height: $line-height-default;
+        letter-spacing: $letter-spacing-default;
+        margin: $margin-default;
+    }
+
+    // ------------ Text Paragraphe ------------
+        .txtParagraph {
+            font-family: $font-paragraph;
+            font-size: $font-size-default;
+            color: $font-color-default;
+            line-height: $line-height-default;
+            font-weight: $font-weight-default;
+        }
+
+    // ------------ Links ------------
+        a, .link {
+            color: $link-color;
+            background: $background-link-color;
+            text-decoration: $link-decoration;
+            &:hover {
+                color: $link-color-hover;
+                background: $background-link-color-hover;
+                text-decoration: $link-decoration-hover;
+            }
+        }
+   
+    // ------------ Line Separator ------------
+        hr, .line-separator {
+            height: $hr-height;
+            color: $hr-color;
+            margin: $hr-margin;
+        }

@@ -1,6 +1,39 @@
-@import './../lib/fontawesome/scss/fontawesome.scss';
-@import './../lib/fontawesome/scss/solid.scss';
-@import './../lib/fontawesome/scss/brands.scss';
-@import './../lib/fontawesome/scss/regular.scss';
-@import './variables';
-@import './grid';
+@import './elementCSS/index.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, $colorText, $colorBrouwn);
+}
+.site-header {
+    color: $colorLight;
+    box-sizing: border-box;
+    width: 20%;
+    height: 80px;
+    border: solid $colorLight 5px;
+    padding: 5px;
+    margin: auto;
+    &.txt-1 {
+        font-weight: 5rem;
+    }
+}
+
+.text-center {
+    &.txt-2{
+        font-weight: bold;
+    }
+}
+
+.main-content {
+    background: $colorLight;
+    padding: 3em;
+    border-radius: $border-radius-default;
+}
+
+p {
+    margin: $margin-default;
+    font-family: $font-paragraph;
+}
+
