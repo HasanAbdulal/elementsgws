@@ -8,12 +8,14 @@
     // |||||||||||| -Title- ||||||||||||
         $font-title: 'Source Sans Pro', sans-serif;
 
-        $font-size-title-1: 2.5rem;
-        $font-size-title-2: 2.2rem;
-        $font-size-title-3: 1.9rem;
-        $font-size-title-4: 1.6rem;
-        $font-size-title-5: 1.3rem;
-        $font-size-title-6: 1rem;   
+        $font-title-size-1: 2.5rem;
+        $font-title-size-2: 2.2rem;
+        $font-title-size-3: 1.9rem;
+        $font-title-size-4: 1.6rem;
+        $font-title-size-5: 1.3rem;
+        $font-title-size-6: 1rem;
+        
+        $font-title-weight: bloder;
 
     // |||||||||||| -Paragraph- ||||||||||||
         $font-paragraph: 'Merriweather', serif;
@@ -21,16 +23,16 @@
     // |||||||||||| -Font Default Values- ||||||||||||
 
         // ------------ _Color ------------
-        $font-color-default: $colorText;
+        $font-default-color: $colorText;
 
         // ------------ _Dimensions ------------
-            $font-size-default: 1.1em;
-            $font-weight-default: 600;
-            $line-height-default: 1.7;
+            $font-default-size: 1.1em;
+            $font-default-weight: 300;
+            $line-default-height: 1.7;
 
         // ------------ _Letter Spacing & margin ------------
             $letter-spacing-default: .025em;
-            $margin-default: 0 0 .7em 0;
+            $margin-default: .5em 0 .5em 0;
 
     // |||||||||||| -Links- ||||||||||||
         $link-color: $colorText;
@@ -53,60 +55,65 @@
 
     h1, .title1 {
         font-family: $font-title;
-        font-size: $font-size-title-1;
-        font-weight: $font-weight-default;
-        line-height: $line-height-default;
+        font-size: $font-title-size-1;
+        font-weight: $font-title-weight;
+        line-height: $line-default-height;
         letter-spacing: $letter-spacing-default;
         margin: $margin-default;
     }
     h2, .title2 {
         font-family: $font-title;
-        font-size: $font-size-title-2;
-        font-weight: $font-weight-default;
-        line-height: $line-height-default;
+        font-size: $font-title-size-2;
+        font-weight: $font-title-weight;
+        line-height: $line-default-height;
         letter-spacing: $letter-spacing-default;
         margin: $margin-default;
     }
     h3, .title3 {
         font-family: $font-title;
-        font-size: $font-size-title-3;
-        font-weight: $font-weight-default;
-        line-height: $line-height-default;
+        font-size: $font-title-size-3;
+        font-weight: $font-title-weight;
+        line-height: $line-default-height;
         letter-spacing: $letter-spacing-default;
         margin: $margin-default;
     }
     h4, .title4 {
         font-family: $font-title;
-        font-size: $font-size-title-4;
-        font-weight: $font-weight-default;
-        line-height: $line-height-default;
+        font-size: $font-title-size-4;
+        font-weight: $font-title-weight;
+        line-height: $line-default-height;
         letter-spacing: $letter-spacing-default;
         margin: $margin-default;
     }
     h5, .title5 {
         font-family: $font-title;
-        font-size: $font-size-title-5;
-        font-weight: $font-weight-default;
-        line-height: $line-height-default;
+        font-size: $font-title-size-5;
+        font-weight: $font-title-weight;
+        line-height: $line-default-height;
         letter-spacing: $letter-spacing-default;
         margin: $margin-default;
     }
     h6, .title6 {
         font-family: $font-title;
-        font-size: $font-size-title-6;
-        font-weight: $font-weight-default;
-        line-height: $line-height-default;
+        font-size: $font-title-size-6;
+        font-weight: $font-title-weight;
+        line-height: $line-default-height;
         letter-spacing: $letter-spacing-default;
         margin: $margin-default;
     }
 
     // ------------ Text Paragraphe ------------
-        .txtParagraph {
+        p, .txtParagraph {
             font-family: $font-paragraph;
-            font-size: $font-size-default;
-            color: $font-color-default;
-            line-height: $line-height-default;
-            font-weight: $font-weight-default;
+            font-size: $font-default-size;
+            color: $font-default-color;
+            line-height: $line-default-height;
+            font-weight: $font-default-weight;
+            &.italic-paragraph {
+                font-style: italic;
+                font-size: 1em;
+                margin: -.5rem 0 2rem;
+            }
         }
 
     // ------------ Links ------------

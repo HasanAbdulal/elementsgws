@@ -20,7 +20,7 @@
                     <li><a href="./elements.html">ELEMENTS</a></li>
                 </ul>
             </nav>
-            <h2 class="text-center txt-2">ELEMENTS <span class="dBlock">REFERENCE</span></h2>
+            <h2 class="text-center txt-2">ELEMENTS <span>REFERENCE</span></h2>
             <!-- Colors Section -->
             <section>
                 <h2>COLORS</h2>
@@ -34,59 +34,65 @@
             <!-- Text Section -->
             <section>
                 <h2>TEXT</h2>
-                <p>This is <b>blod</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup>text and this is <sub>subscript</sub>text. This is <u>underlined</u> and this is code: <code>forEach(;;) {...}.</code><br/> 
+                <p>This is <b>blod</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup>text and this is <sub>subscript</sub>text. This is <u>underlined</u> and this is code: <code class="colorNeutral">forEach(;;) {...}.</code><br/> 
                     Finally, this is a <a href="#">link</a>.</p>
                 <hr class="line-separator"/>
                 <!-- Header Text Section -->
                 <h2>HEADERS</h2>
-                <h1>HEADING LEVEL 1</h1>
-                <h2>HEADING LEVEL 2</h2>
-                <h3>HEADING LEVEL 3</h3>
-                <h4>HEADING LEVEL 4</h4>
-                <h5>HEADING LEVEL 5</h5>
-                <h6>HEADING LEVEL 6</h6>
+                <div>
+                    <h1>HEADING LEVEL 1</h1>
+                    <h2>HEADING LEVEL 2</h2>
+                    <h3>HEADING LEVEL 3</h3>
+                    <h4>HEADING LEVEL 4</h4>
+                    <h5>HEADING LEVEL 5</h5>
+                    <h6>HEADING LEVEL 6</h6>
+                </div>
             </section>
             <hr class="line-separator"/>
             <section>
-                <h2>HEADING WITH A SUBTITLE</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempore magni praesentium aut hic eos suscipit pariatur, 
-                        iusto eligendi soluta quam sunt odio? Nisi iste excepturi molestias et voluptatibus nemo?
-                   </p>
-                <h3>HEADING WITH A SUBTITLE</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempore magni praesentium aut hic eos suscipit pariatur, 
-                        iusto eligendi soluta quam sunt odio? Nisi iste excepturi molestias et voluptatibus nemo?
-                    </p>
-                <h4>HEADING WITH A SUBTITLE</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempore magni praesentium aut hic eos suscipit pariatur, 
-                        iusto eligendi soluta quam sunt odio? Nisi iste excepturi molestias et voluptatibus nemo?
-                   </p>
+                <header>
+                    <h3>HEADING WITH A SUBTITLE</h3>
+                        <p class="italic-paragraph">Lorem ipsum dolor sit amet consectetur</p>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempore magni praesentium aut hic eos suscipit pariatur, iusto eligendi soluta quam sunt odio? Nisi iste excepturi molestias et voluptatibus nemo?
+               </p>
+               <header>
+                    <h4>HEADING WITH A SUBTITLE</h4>
+                        <p class="italic-paragraph">Lorem ipsum dolor sit amet consectetur</p>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempore magni praesentium aut hic eos suscipit pariatur, iusto eligendi soluta quam sunt odio? Nisi iste excepturi molestias et voluptatibus nemo?</p>
+                <header>
+                    <h5>HEADING WITH A SUBTITLE</h5>
+                        <p class="italic-paragraph">Lorem ipsum dolor sit amet consectetur</p>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempore magni praesentium aut hic eos suscipit pariatur, iusto eligendi soluta quam sunt odio? Nisi iste excepturi molestias et voluptatibus nemo? </p>
             </section>
             <hr class="line-separator"/>
             <section>
                 <h2>LISTES</h2>
-                <h3>UNORDERED - UL</h3>
-                <ul>
+                <h4>UNORDERED - UL</h4>
+                <ul class="txtParagraph">
                     <li>Quis tempore magni praesentium</li>
                     <li>Molestias et voluptatibus nemo?</li>
                     <li>Ipsum dolor sit amet consectetur</li>
                     <li>Aut hic eos suscipit pariatur</li>
                 </ul>
-                <h3>UNORDERED - UL.ALTERNATE</h3>
-                <ul>
+                <h4>UNORDERED - UL.ALTERNATE</h4>
+                <ul class="txtParagraph">
                     <li>Quis tempore magni praesentium</li>
                     <li>Molestias et voluptatibus nemo?</li>
                     <li>Ipsum dolor sit amet consectetur</li>
                     <li>Aut hic eos suscipit pariatur</li>
                 </ul>
-                <h3>ORDERED</h3>
-                <ol>
+                <h4>ORDERED</h4>
+                <ol class="txtParagraph">
                     <li>Quis tempore magni praesentium</li>
                     <li>Molestias et voluptatibus nemo?</li>
                     <li>Ipsum dolor sit amet consectetur</li>
                     <li>Aut hic eos suscipit pariatur</li>
                     <li>Molestias et voluptatibus nemo?</li>
                 </ol>
-                <h3>ICONS</h3>
+                <h4>ICONS</h4>
                 <ul>
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>
@@ -110,18 +116,188 @@
             </section>
             <hr class="line-separator"/>
             <h2>BLOCKQUOTE</h2>
-            <blockquote>
+            <blockquote class="vertical-line-blockquote txtParagraph">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni expedita dolorum deleniti harum odio ipsum tenetur sequi nemo fuga adipisci omnis sit ab, corporis, amet veniam? Dolor hic fugit reiciendis!
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni expedita dolorum deleniti harum odio ipsum tenetur sequi nemo fuga adipisci omnis sit ab, corporis, amet veniam? Dolor hic fugit reiciendis!
             </blockquote>
             <hr class="line-separator"/>
-                <h2>TABLES</h2>
-                <h3>DEFAULT</h3>
+            <h2>TABLES</h2>
+            <h4>DEFAULT</h4>
+            <div>
+                <table class="table-default">
+                    <!-- Table Header -->
+                    <thead>
+                        <tr>
+                            <th>NAME</th>
+                            <th>DESCRIPTION</th>
+                            <th>PRICE</th>
+                        </tr>
+                    </thead>
+                    <!-- Table Body -->
+                    <tbody>
+                        <tr>
+                            <td>Item 1</td>
+                            <td>deleniti harum odio ipsum tenetu</td>
+                            <td>29.66</td>
+                        </tr>
+                        <tr>
+                            <td>Item 2</td>
+                            <td>consectetur adipisicing elit</td>
+                            <td>19.66</td>
+                        </tr>
+                        <tr>
+                            <td>Item 3</td>
+                            <td>amet veniam? Dolor hic fugit </td>
+                            <td>23.66</td>
+                        </tr>
+                        <tr>
+                            <td>Item 4</td>
+                            <td>accusantium! Quia, voluptatem.</td>
+                            <td>20.66</td>
+                        </tr>
+                        <tr>
+                            <td>Item 5</td>
+                            <td>necessitatibus perspiciatis ea</td>
+                            <td>39.66</td>
+                        </tr>
+                    </tbody>
+                    <!-- Table Footer -->
+                    <tfoot>
+                        <td></td>
+                        <td></td>
+                        <td>145.99</td>
+                    </tfoot>
+                </table>
+            </div>
+            <div>
+                <h4>ALTERNATE</h4>
+                <table class="table-alternate">
+                    <!-- Table Header -->
+                    <thead>
+                        <tr>
+                            <th>NAME</th>
+                            <th>DESCRIPTION</th>
+                            <th>PRICE</th>
+                        </tr>
+                    </thead>
+                    <!-- Table Body -->
+                    <tbody>
+                        <tr>
+                            <td>Item 1</td>
+                            <td>deleniti harum odio ipsum tenetu</td>
+                            <td>29.66</td>
+                        </tr>
+                        <tr>
+                            <td>Item 2</td>
+                            <td>consectetur adipisicing elit</td>
+                            <td>19.66</td>
+                        </tr>
+                        <tr>
+                            <td>Item 3</td>
+                            <td>amet veniam? Dolor hic fugit </td>
+                            <td>23.66</td>
+                        </tr>
+                        <tr>
+                            <td>Item 4</td>
+                            <td>accusantium! Quia, voluptatem.</td>
+                            <td>20.66</td>
+                        </tr>
+                        <tr>
+                            <td>Item 5</td>
+                            <td>necessitatibus perspiciatis ea</td>
+                            <td>39.66</td>
+                        </tr>
+                    </tbody>
+                    <!-- Table Footer -->
+                    <tfoot>
+                        <td></td>
+                        <td></td>
+                        <td>145.99</td>
+                    </tfoot>
+                </table>
+            </div>
             <hr class="line-separator"/>
             <h2>BUTTONS</h2>
-            
+            <div>
+                <button class="button-primary" type="button">
+                    PRIMARY
+                </button>
+                <button class="button-default" type="button">
+                    DEFAULT
+                </button>
+            </div>
+            <div>
+                <button class="button-large" type="button">
+                    LARGE
+                </button>
+                <button class="button-default" type="button">
+                    DEFAULT
+                </button>
+                <button class="button-small" type="button">
+                    SMALL
+                </button>
+            </div>
+            <div>
+                <button class="button-default fit" type="button">
+                    FIT
+                </button>
+                <button class="button-small fit" type="button">
+                    FIT
+                </button>
+            </div> 
+            <div>
+                <button class="button-small sma1" type="button">
+                    FIT + SMALL
+                </button>
+                <button class="button-small sma2" type="button">
+                    FIT + SMALL
+                </button>
+            </div>    
+            <div>
+                <button class="button-icon" type="button">
+                    ICON
+                </button>
+                <button class="button-icon telecharge" type="button">
+                    ICON
+                </button>
+            </div>
+                
+                <button type="button">
+                    PRIMARY
+                </button>
+                <button type="button">
+                    DEFAULT
+                </button>
             <hr class="line-separator"/>
-            <h2>PREFORMATTED</h2>
+            <h2>FORM</h2>
+                <form action="" method="POST">
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <fieldset>
+                        <input type="radio" id="low" name="element">
+                        <label for="low">low</label>
+
+                        <input type="radio" id="normal" name="element">
+                        <label for="normal">Normal</label>
+
+                        <input type="radio" id="high" name="element">
+                        <label for="high">High</label>
+                    </fieldset>
+
+                    <select name="ieps" id="section-select">
+                        <option value="">--Category--</option>
+                        <option value="web developer">Web Developer</option>
+                        <option value="web desgnie">Web Desgnie</option>
+                        <option value="infirmier">Infirmier</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>
+                </form>
+
+            <hr class="line-separator"/>
+            <h3>PREFORMATTED</h3>
             <pre>
                 i = 0;
 
@@ -134,7 +310,9 @@
             </pre>
         </main>
         <footer class="sit-footer">
+            <div>
 
+            </div>
         </footer>
     </div>
 </body>

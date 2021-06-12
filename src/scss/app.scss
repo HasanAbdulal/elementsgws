@@ -37,3 +37,26 @@ p {
     font-family: $font-paragraph;
 }
 
+.dBlock {
+    display: block;
+}
+
+.dInBlock {
+    display: inline-block;
+}
+// ||||||||||||||| Vertical Line |||||||||||
+    .vertical-line-blockquote {
+        float: left;
+        border-left: 4px solid #c5c5c5;
+        margin-left: 2px;
+        padding: 10px;
+    }
+
+
+
+// ||||||||||||||| MEDIA QUERIES |||||||||||
+    // @media screen and (min-width: 768px) {
+    //     .table-default {
+    //         display: inline-block;
+    //     }
+    // }

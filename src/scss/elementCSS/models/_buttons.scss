@@ -1,0 +1,134 @@
+// -----------------------------------------------
+// |||||||||||| Buttons Variables Model ||||||||||||
+// -----------------------------------------------
+
+    // ------------ Button Primary ------------
+        $button-primary-background-color: $colorText;
+        $button-primary-color: $colorLight;
+        $button-primary-border: none;
+        $button-primary-padding: 13px 29px;
+        $button-primary-text-align: center;
+        $button-primary-text-decoration: none;
+        $button-primary-display: inline-block;
+
+    // ------------ Button Default ------------
+        $button-default-background-color: $colorLight;
+        $button-default-color: $colorText;
+        $button-default-border: 2px solid $colorText;
+        $button-default-padding: 13px 29px;
+        $button-default-width: 50%;
+        $button-default-margin: .5rem 1rem 1rem 0; 
+
+    // ------------ Button Small ------------
+        $button-small-background-color: $colorLight;
+        $button-small-color: $colorText;
+        $button-small-border: 2px solid $colorText;
+        $button-small-padding: 9px 25px;
+
+    // ------------ Button Large ------------
+        $button-large-background-color: $colorText;
+        $button-large-color: $colorLight;
+        $button-large-border: none;
+        $button-large-padding: 16px 45px;
+        $button-large-text-align: center;
+        $button-large-text-decoration: none;
+        $button-large-display: inline-block;
+
+    // ------------ Button Icon ------------
+        $button-icon-background-color: $colorText;
+        $button-icon-color: $colorLight;
+        $button-icon-border: none;
+        $button-icon-padding: 13px 29px;
+        $button-icon-text-align: center;
+        $button-icon-text-decoration: none;
+        $button-icon-display: inline-block;
+
+    //  ------------ _hover ------------
+
+
+// -------------------------------------------------------
+// |||||||||||| Specification Model ||||||||||||
+// -------------------------------------------------------
+
+    .button-primary {
+        background-color: $button-primary-background-color;
+        color: $button-primary-color;
+        border: $button-primary-border;
+        padding: $button-primary-padding;
+        margin: $button-default-margin;
+        text-align: $button-primary-text-align;
+        text-decoration: $button-primary-text-decoration;
+        display: $button-primary-display;
+        font-size: $font-default-size;
+        &:hover {
+            background-color: $colorNeutral;
+            color: $button-primary-background-color;
+        }
+    }
+
+    .button-default {
+        background-color: $button-default-background-color;
+        color: $button-default-color;
+        border: $button-default-border;
+        padding: $button-default-padding;
+        font-size: $font-default-size;
+        margin: $button-default-margin;
+        &.fit {
+            background-color: $button-default-color;
+            color: $button-default-background-color;
+            width: 45%;
+            
+        }
+    }
+
+    .button-small {
+        background-color: $button-small-background-color;
+        color: $button-small-color;
+        border: $button-small-border;
+        padding: $button-small-padding;
+        font-size: $font-default-size;
+        margin: $button-default-margin;
+        &.fit{
+            width: 45%;
+            padding: $button-default-padding;
+        }
+        &.sma1 {
+            background-color: $button-small-color;
+            color: $button-small-background-color;
+            width: 45%;
+        }
+        &.sma2 {
+            background-color: $button-small-background-color;
+            color: $button-small-color;
+            width: 45%;
+        }
+    }
+
+    .button-large {
+        background-color: $button-large-background-color;
+        color: $button-large-color;
+        border: $button-large-border;
+        padding: $button-large-padding;
+        text-align: $button-large-text-align;
+        text-decoration: $button-large-text-decoration;
+        display: $button-large-display;
+        font-size: $font-default-size;
+        margin: $button-default-margin;
+    }
+
+    .button-icon {
+        background-color: $button-icon-background-color;
+        color: $button-icon-color;
+        border: $button-icon-border;
+        padding: $button-icon-padding;
+        text-align: $button-icon-text-align;
+        text-decoration: $button-icon-text-decoration;
+        display: $button-icon-display;
+        margin: $button-default-margin;
+        font-size: $font-default-size;
+        &.telecharge {
+            background-color: $button-icon-color;
+            color: $button-icon-background-color;
+            border: $button-default-border;
+        }
+    }

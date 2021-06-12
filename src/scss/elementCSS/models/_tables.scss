@@ -1,0 +1,85 @@
+// -----------------------------------------------
+// |||||||||||| Table Variables Model ||||||||||||
+// -----------------------------------------------
+    $width-table: 100%;
+    $height-table: 50px;
+    $paddind-table: 10px;
+    $margin-table: 20px 10px;
+    $border-table: 1px solid #ccc;
+
+
+
+// -------------------------------------------------------
+// |||||||||||| Specification Model ||||||||||||
+// -------------------------------------------------------
+
+    .table-default {
+        border-collapse: collapse;
+        margin: $margin-table;
+        font-size: $font-default-size;
+        width: $width-table;
+        empty-cells: hide;
+    }
+
+    .table-default thead tr {
+        background-color: $colorSky;
+        color: $colorLight;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .table-default th,
+    .table-default td {
+        padding: $paddind-table;
+    }
+
+    .table-default tbody tr {
+        border-bottom: 1px solid #c5c5c5;
+        &:nth-child(even) {
+            background-color: rgb(216, 216, 216);
+        }
+        &:hover {
+            background-color: $colorNeutral;
+        }
+    }
+
+    // ------------ Table Alternate ------------
+        .table-alternate {
+            border-collapse: collapse;
+            margin: $margin-table;
+            font-size: $font-default-size;
+            width: $width-table;
+            empty-cells: hide;
+            border-collapse: collapse;
+        }
+
+        .table-alternate thead tr {
+            background-color: $colorSky;
+            border: 2px solid $colorSky;
+            color: $colorLight;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .table-alternate th,
+        .table-alternate tbody td {
+            padding: $paddind-table;
+            border-right: 1px solid #c5c5c5;
+            border-left: 1px solid #c5c5c5;
+        }
+
+        .table-alternate tbody tr {
+            border: 2px solid #c5c5c5;
+            &:nth-child(odd) {
+                background-color: rgb(216, 216, 216);
+            }
+            &:hover {
+                background-color: $colorNeutral;
+            }
+        }
+        
+        .table-alternate tfoot,
+        .table-alternate td:last-child{
+            padding: $paddind-table;
+            margin: $margin-table;
+        }
