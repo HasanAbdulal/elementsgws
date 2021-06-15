@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elements</title>
     <link rel="stylesheet" href="./scss/app.scss">
+    <title>Elements</title>
 </head>
 <body>
-    <div class="container grid">
-        <header class="site-header text-center">
-            <h1 class="txt-1">INTENSIV'</h1>
-        </header>
-        <main class="main-content">
-            <nav>
+    <div class="">
+        <header class="site-header text-center container grid">
+            <div>
+                <h1 class="txt-1">INTENSIV'</h1>
+            </div>
+            <!-- <input type="checkbox" id="hamburgerCheckbox" />
+            <label for="hamburgerCheckbox" id="hamburgerLabel"></label> -->
+            <nav class="main-nav">
                 <ul>
-                    <li><a href="./index.html">THIS IS INTENSIV'</a></li>
-                    <li><a href="#">GENERIC PAGE</a></li>
-                    <li><a href="./elements.html">ELEMENTS</a></li>
+                    <li>
+                        <a href="./index.html">THIS IS INTENSIV'</a>
+                    </li>
+                    <li>
+                        <a href="#">GENERIC PAGE</a>
+                    </li>
+                    <li>
+                        <a href="./elements.html" class="is-active">ELEMENTS</a>
+                    </li>
                 </ul>
             </nav>
+        </header>
+        <main class="main-content container">
             <h2 class="text-center txt-2">ELEMENTS <span>REFERENCE</span></h2>
             <!-- Colors Section -->
-            <section>
+            <section class="color-site">
                 <h2>COLORS</h2>
                 <div class="color-block colorSky">colorSky #18BFEF</div>
                 <div class="color-block colorLight">colorLight #F7F7F7</div>
@@ -32,7 +42,7 @@
             </section>
             <hr class="line-separator"/>
             <!-- Text Section -->
-            <section>
+            <section class="text-heading-section">
                 <h2>TEXT</h2>
                 <p>This is <b>blod</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup>text and this is <sub>subscript</sub>text. This is <u>underlined</u> and this is code: <code class="colorNeutral">forEach(;;) {...}.</code><br/> 
                     Finally, this is a <a href="#">link</a>.</p>
@@ -68,58 +78,77 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempore magni praesentium aut hic eos suscipit pariatur, iusto eligendi soluta quam sunt odio? Nisi iste excepturi molestias et voluptatibus nemo? </p>
             </section>
             <hr class="line-separator"/>
-            <section>
+            <div class="lists-main container grid">
                 <h2>LISTES</h2>
-                <h4>UNORDERED - UL</h4>
-                <ul class="txtParagraph">
-                    <li>Quis tempore magni praesentium</li>
-                    <li>Molestias et voluptatibus nemo?</li>
-                    <li>Ipsum dolor sit amet consectetur</li>
-                    <li>Aut hic eos suscipit pariatur</li>
-                </ul>
-                <h4>UNORDERED - UL.ALTERNATE</h4>
-                <ul class="txtParagraph">
-                    <li>Quis tempore magni praesentium</li>
-                    <li>Molestias et voluptatibus nemo?</li>
-                    <li>Ipsum dolor sit amet consectetur</li>
-                    <li>Aut hic eos suscipit pariatur</li>
-                </ul>
-                <h4>ORDERED</h4>
-                <ol class="txtParagraph">
-                    <li>Quis tempore magni praesentium</li>
-                    <li>Molestias et voluptatibus nemo?</li>
-                    <li>Ipsum dolor sit amet consectetur</li>
-                    <li>Aut hic eos suscipit pariatur</li>
-                    <li>Molestias et voluptatibus nemo?</li>
-                </ol>
-                <h4>ICONS</h4>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
+                <div class="col-md-6">
+                    <h4>UNORDERED - UL</h4>
+                    <ul class="menu-list txtParagraph">
+                        <li>Quis tempore magni praesentium</li>
+                        <li>Molestias et voluptatibus nemo?</li>
+                        <li>Ipsum dolor sit amet consectetur</li>
+                        <li>Aut hic eos suscipit pariatur</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>ORDERED</h4>
+                    <ol class="menu-list-order txtParagraph">
+                        <li>Quis tempore magni praesentium</li>
+                        <li>Molestias et voluptatibus nemo?</li>
+                        <li>Ipsum dolor sit amet consectetur</li>
+                        <li>Aut hic eos suscipit pariatur</li>
+                        <li>Molestias et voluptatibus nemo?</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <h4>UNORDERED - UL.ALTERNATE</h4>
+                    <ul class="menu-list txtParagraph">
+                        <li>Quis tempore magni praesentium</li>
+                        <li>Molestias et voluptatibus nemo?</li>
+                        <li>Ipsum dolor sit amet consectetur</li>
+                        <li>Aut hic eos suscipit pariatur</li>
+                    </ul>
+                </div>
+                
+                <div class="social-icons col-md-6">
+                    <h4>ICONS</h4>
+                    <ul class="icon-list">
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <ul class="icon-border">
+                        <li><a href="#"><i class="fab fa-twitter "></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook "></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram "></i></a></li>
+                        <li><a href="#"><i class="fab fa-github "></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube "></i></a></li>
+                    </ul>
+                </div>
+                
                 <h3>DEFINTION</h3>
                 <h4>Item 1</h4>
-                <p>
+                <article class="art-item txtParagraph">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam neque repellendus voluptatum quis facilis laboriosam, veritatis quos, quod veniam cum, necessitatibus perspiciatis ea praesentium reiciendis porro labore accusantium! Quia, voluptatem.
-                </p>
+                </article>
                 <h4>Item 2</h4>
-                <p>
+                <article>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam neque repellendus voluptatum quis facilis laboriosam, veritatis quos, quod veniam cum, necessitatibus perspiciatis ea praesentium reiciendis porro labore accusantium! Quia, voluptatem.
-                </p>
+                </article>
                 <h4>Item 3</h4>
-                <p>
+                <article>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam neque repellendus voluptatum quis facilis laboriosam, veritatis quos, quod veniam cum, necessitatibus perspiciatis ea praesentium reiciendis porro labore accusantium! Quia, voluptatem.
-                </p>
-            </section>
+                </article>
+            </div>
             <hr class="line-separator"/>
-            <h2>BLOCKQUOTE</h2>
-            <blockquote class="vertical-line-blockquote txtParagraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni expedita dolorum deleniti harum odio ipsum tenetur sequi nemo fuga adipisci omnis sit ab, corporis, amet veniam? Dolor hic fugit reiciendis!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni expedita dolorum deleniti harum odio ipsum tenetur sequi nemo fuga adipisci omnis sit ab, corporis, amet veniam? Dolor hic fugit reiciendis!
-            </blockquote>
+            <div>
+                <h2>BLOCKQUOTE</h2>
+                <blockquote class="vertical-line-blockquote txtParagraph">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni expedita dolorum deleniti harum odio ipsum tenetur sequi nemo fuga adipisci omnis sit ab, corporis, amet veniam? Dolor hic fugit reiciendis!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni expedita dolorum deleniti harum odio ipsum tenetur sequi nemo fuga adipisci omnis sit ab, corporis, amet veniam? Dolor hic fugit reiciendis!
+                </blockquote>
+            </div>
             <hr class="line-separator"/>
             <h2>TABLES</h2>
             <h4>DEFAULT</h4>
@@ -163,9 +192,11 @@
                     </tbody>
                     <!-- Table Footer -->
                     <tfoot>
-                        <td></td>
-                        <td></td>
-                        <td>145.99</td>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>145.99</td>
+                        </tr>
                     </tfoot>
                 </table>
             </div>
@@ -210,9 +241,11 @@
                     </tbody>
                     <!-- Table Footer -->
                     <tfoot>
-                        <td></td>
-                        <td></td>
-                        <td>145.99</td>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>145.99</td>
+                        </tr>
                     </tfoot>
                 </table>
             </div>
@@ -270,7 +303,7 @@
                 </button>
             <hr class="line-separator"/>
             <h2>FORM</h2>
-                <form action="" method="POST">
+                <form action="./index.html" method="POST">
                     <div>
                         <input type="text" name="name" id="name" placeholder="Name">
                         <input type="email" name="email" id="email" placeholder="Email">

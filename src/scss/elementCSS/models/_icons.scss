@@ -1,0 +1,45 @@
+// -----------------------------------------------
+// |||||||||||| Lists Variables Model ||||||||||||
+// -----------------------------------------------
+    
+
+// -------------------------------------------------------
+// |||||||||||| Specification Model ||||||||||||
+// -------------------------------------------------------
+
+.icon-list {
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Font Awesome 5 Free';
+        display: flex;
+        color: #212931;
+        cursor: pointer;
+        .fa-twitter,
+        .fa-facebook,
+        .fa-instagram,
+        .fa-github,
+        .fa-youtube {
+            padding-left: 1.7rem;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            border: 1rem;
+            right: 2rem;
+            font-size: 2rem;
+            margin: 0 35px 40px 0;
+        }
+        &.icon-border {
+            li {
+                padding: 0 -20px 0 0;
+                margin: 0 -20px 0 0;
+                .fab {
+                    border-radius: 50%;
+                    border: 2px solid #717981; 
+                    margin: 0 35px 35px 0;
+                    width: auto;
+                    height: auto;
+                } 
+            }
+               
+        }
+    }

@@ -16,7 +16,7 @@
     .table-default {
         border-collapse: collapse;
         margin: $margin-table;
-        font-size: $font-default-size;
+        font-size: 1.1rem;
         width: $width-table;
         empty-cells: hide;
     }
@@ -47,7 +47,7 @@
         .table-alternate {
             border-collapse: collapse;
             margin: $margin-table;
-            font-size: $font-default-size;
+            font-size: 1.1rem;
             width: $width-table;
             empty-cells: hide;
             border-collapse: collapse;
